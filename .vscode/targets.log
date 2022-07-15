@@ -1,0 +1,546 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Jul 14 10:42:49 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 23)
+PROTOBUF_TWIRP_FILES := rpc/go/coin/service.twirp.go rpc/go/pot/service.twirp.go
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `build/makefiles/osvars.mk', line 27)
+PROTOC_PLATFORM := osx-x86_64
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+ 
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/isaias.garcia/Documents/projects/pyggpot
+# makefile (from `build/makefiles/shellvars.mk', line 1)
+SHELL := /bin/bash
+# makefile (from `Makefile', line 86)
+XO = PATH="$(TOOLS_BIN_DIR):$$PATH" $(TOOLS_BIN_DIR)/xo
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `build/makefiles/osvars.mk', line 1)
+MAKEFILE_LIST :=  Makefile build/makefiles/shellvars.mk build/makefiles/osvars.mk
+# makefile (from `build/makefiles/shellvars.mk', line 2)
+GO111MODULE := on
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/28/hdvrf9k55l9_d3bgp_4qf8kw0000gr/T/vscode-ipc-0a492446-3dc2-4bb1-a4f0-10f4cb6ff8bd.sock
+# environment
+VSCODE_CWD = /
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# makefile (from `Makefile', line 21)
+PROTOC := tools_module/tools/bin/protoc
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+# makefile (from `Makefile', line 18)
+SERVICES := coin pot
+# environment
+GOPATH = /Users/isaias.garcia/go
+# environment
+LaunchInstanceID = CFCAACD9-F6D8-4692-8BEF-377F9C6450DC
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 30)
+PROTOBUF_ALL_FILES := rpc/go/coin/service.pb.go rpc/go/pot/service.pb.go rpc/go/coin/service.twirp.go rpc/go/pot/service.twirp.go rpc/go/coin/service.validator.pb.go rpc/go/pot/service.validator.pb.go rpc/python/coin/service_pb2.py rpc/python/pot/service_pb2.py rpc/python/coin/service_pb2_twirp.py rpc/python/pot/service_pb2_twirp.py rpc/js/coin/service_pb.js rpc/js/pot/service_pb.js rpc/js/coin/service_pb_twirp.js rpc/js/pot/service_pb_twirp.js swaggerui/rpc/coin/service.swagger.json swaggerui/rpc/pot/service.swagger.json
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WEnDPSuBqV/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `build/makefiles/osvars.mk', line 14)
+UNAME_S := Darwin
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/isaias.garcia/Documents/projects/pyggpot
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+GOMODCACHE = /Users/isaias.garcia/go/pkg/mod
+# environment
+HOME = /Users/isaias.garcia
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# makefile (from `Makefile', line 26)
+PROTOBUF_PYTHON_TWIRP_FILES := rpc/python/coin/service_pb2_twirp.py rpc/python/pot/service_pb2_twirp.py
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/isaias.garcia/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = isaias.garcia
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 29)
+SWAGGER_JSON_FILES := swaggerui/rpc/coin/service.swagger.json swaggerui/rpc/pot/service.swagger.json
+# makefile (from `Makefile', line 34)
+STATIK = $(TOOLS_BIN_DIR)/statik
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 22)
+PROTOBUF_PB_FILES := rpc/go/coin/service.pb.go rpc/go/pot/service.pb.go
+# environment
+SHLVL = 2
+# makefile (from `Makefile', line 28)
+PROTOBUF_JS_TWIRP_FILES := rpc/js/coin/service_pb_twirp.js rpc/js/pot/service_pb_twirp.js
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = isaias.garcia
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 25)
+PROTOBUF_PYTHON_FILES := rpc/python/coin/service_pb2.py rpc/python/pot/service_pb2.py
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/28/hdvrf9k55l9_d3bgp_4qf8kw0000gr/T/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 84)
+MODEL_PATH := internal/models
+# environment
+VSCODE_IPC_HOOK = /Users/isaias.garcia/Library/Application Support/Code/1.68.1-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `build/makefiles/osvars.mk', line 25)
+UNAME_P := X86_64
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.116996.117002
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 27)
+PROTOBUF_JS_FILES := rpc/js/coin/service_pb.js rpc/js/pot/service_pb.js
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F8:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 20)
+TOOLS_BIN_DIR := tools_module/tools/bin
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 85)
+TEMPLATE_PATH := sql/templates
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 24)
+PROTOBUF_VALIDATOR_FILES := rpc/go/coin/service.validator.pb.go rpc/go/pot/service.validator.pb.go
+# environment
+SECURITYSESSIONID = 186a6
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 87)
+USQL = $(TOOLS_BIN_DIR)/usql
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 505
+# variable set hash-table stats:
+# Load=88/1024=9%, Rehash=0, Collisions=2/163=1%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 1439761): 20 files, no impossibilities.
+
+# 20 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+rpc/go/%/service.twirp.go rpc/go/%/service.pb.go rpc/go/%/service.validator.pb.go rpc/python/%/service_pb2.py rpc/python/%/service_pb2_twirp.py rpc/js/%/service_pb.js rpc/js/%/service_pb_twirp.js swaggerui/rpc/%/service.swagger.json: proto/%/service.proto
+#  commands to execute (from `Makefile', line 46):
+	PATH="$(TOOLS_BIN_DIR):$$PATH" $(PROTOC) \
+	--proto_path=./proto \
+	--proto_path=./tools_module/vendor \
+	--proto_path=./tools_module/vendor/github.com/grpc-ecosystem/grpc-gateway \
+	--twirp_out=./rpc/go \
+	--go_out=./rpc/go \
+	--go_opt=paths=source_relative \
+	--govalidators_out=./rpc/go \
+	--python_out=./rpc/python \
+	--twirp_python_out=./rpc/python \
+	--js_out=import_style=commonjs,binary:./rpc/js \
+	--twirp_js_out=import_style=commonjs,binary:./rpc/js \
+	--twirp_swagger_out=./swaggerui/rpc \
+	$<
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build/makefiles/shellvars.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-13 16:55:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+setup:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	make -C tools_module
+	
+
+rpc/python:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 68):
+	mkdir -v -p $@
+	
+
+all: models services
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/15=0%
+
+# Not a target:
+swaggerui/index.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: resetdb models
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rpc/go/pot/service.twirp.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+swaggerui/rpc/pot/service.swagger.json:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rpc/python/pot/service_pb2.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rpc/python/pot/service_pb2_twirp.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean: clean_services clean_models clean_db
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 12):
+	make -C tools_module clean
+	
+
+rpc/go/coin/service.twirp.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+swaggerui/rpc/coin/service.swagger.json:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_services:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 76):
+	rm -vf $(PROTOBUF_ALL_FILES)
+	rm -rf rpc swaggerui/rpc
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rpc/python/coin/service_pb2_twirp.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rpc/go/pot/service.validator.pb.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-13 16:55:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+proto: rpc/go/coin/service.pb.go rpc/go/pot/service.pb.go rpc/go/coin/service.twirp.go rpc/go/pot/service.twirp.go rpc/go/coin/service.validator.pb.go rpc/go/pot/service.validator.pb.go rpc/python/coin/service_pb2.py rpc/python/pot/service_pb2.py rpc/python/coin/service_pb2_twirp.py rpc/python/pot/service_pb2_twirp.py rpc/js/coin/service_pb.js rpc/js/pot/service_pb.js rpc/js/coin/service_pb_twirp.js rpc/js/pot/service_pb_twirp.js swaggerui/rpc/coin/service.swagger.json swaggerui/rpc/pot/service.swagger.json
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+swagger: swaggerui-statik/statik/statik.go
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rpc/go/coin/service.validator.pb.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rpc/go/pot/service.pb.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_models:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 103):
+	rm -vf internal/models/*.xo.go
+	
+
+# Not a target:
+rpc/js/pot/service_pb.js:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rpc/go/coin/service.pb.go: rpc/go rpc/python rpc/js swaggerui/rpc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rpc/js/pot/service_pb_twirp.js:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+db: database.sqlite3
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rpc/python/coin/service_pb2.py:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_db:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 106):
+	rm -vf database.sqlite3
+	
+
+# Not a target:
+rpc/js/coin/service_pb.js:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+database.sqlite3:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 92):
+	source sql/config && $(USQL) $$DB -f sql/schema.sqlite3.sql
+	
+
+swaggerui/rpc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 68):
+	mkdir -v -p $@
+	
+
+# Not a target:
+rpc/js/coin/service_pb_twirp.js:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: clean_services clean_models
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+models:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := models
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/23=4%
+#  commands to execute (from `Makefile', line 95):
+	mkdir -v -p internal/models
+	source sql/config && $(XO) $$DB --int32-type int32 -o $(MODEL_PATH) --template-path $(TEMPLATE_PATH)
+	source sql/config && $(XO) $$DB --int32-type int32 -o $(MODEL_PATH) --query-mode --query-type PotsPaged --query-trim < sql/pots_paged.query.sql
+	source sql/config && $(XO) $$DB --int32-type int32 -o $(MODEL_PATH) --query-mode --query-type CoinsInPot --query-trim < sql/coins_in_pot.query.sql
+	
+
+resetdb: clean_db clean_models db
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+swaggerui-statik/statik/statik.go: swaggerui/index.html swaggerui/rpc/coin/service.swagger.json swaggerui/rpc/pot/service.swagger.json
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 73):
+	$(STATIK) -f -src=swaggerui -dest=swaggerui-statik
+	
+
+rpc/js:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 68):
+	mkdir -v -p $@
+	
+
+services: proto swagger
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/makefiles/osvars.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-13 16:55:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+rpc/go:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 68):
+	mkdir -v -p $@
+	
+
+# files hash-table stats:
+# Load=42/1024=4%, Rehash=0, Collisions=4/117=3%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 3
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4032 / max = 4032 / min = 4032 / avg = 4032
+
+# Finished Make data base on Thu Jul 14 10:42:49 2022
+
+ 

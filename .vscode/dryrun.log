@@ -1,0 +1,43 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/isaias.garcia/Documents/projects/pyggpot'
+mkdir -v -p internal/models
+source sql/config && PATH="tools_module/tools/bin:$PATH" tools_module/tools/bin/xo $DB --int32-type int32 -o internal/models --template-path sql/templates
+source sql/config && PATH="tools_module/tools/bin:$PATH" tools_module/tools/bin/xo $DB --int32-type int32 -o internal/models --query-mode --query-type PotsPaged --query-trim < sql/pots_paged.query.sql
+source sql/config && PATH="tools_module/tools/bin:$PATH" tools_module/tools/bin/xo $DB --int32-type int32 -o internal/models --query-mode --query-type CoinsInPot --query-trim < sql/coins_in_pot.query.sql
+ 
+mkdir -v -p rpc/go
+mkdir -v -p rpc/python
+mkdir -v -p rpc/js
+ 
+mkdir -v -p swaggerui/rpc
+PATH="tools_module/tools/bin:$PATH" tools_module/tools/bin/protoc \
+            --proto_path=./proto \
+            --proto_path=./tools_module/vendor \
+            --proto_path=./tools_module/vendor/github.com/grpc-ecosystem/grpc-gateway \
+            --twirp_out=./rpc/go \
+            --go_out=./rpc/go \
+            --go_opt=paths=source_relative \
+            --govalidators_out=./rpc/go \
+            --python_out=./rpc/python \
+            --twirp_python_out=./rpc/python \
+            --js_out=import_style=commonjs,binary:./rpc/js \
+            --twirp_js_out=import_style=commonjs,binary:./rpc/js \
+            --twirp_swagger_out=./swaggerui/rpc \
+            proto/coin/service.proto
+PATH="tools_module/tools/bin:$PATH" tools_module/tools/bin/protoc \
+            --proto_path=./proto \
+            --proto_path=./tools_module/vendor \
+            --proto_path=./tools_module/vendor/github.com/grpc-ecosystem/grpc-gateway \
+            --twirp_out=./rpc/go \
+            --go_out=./rpc/go \
+            --go_opt=paths=source_relative \
+            --govalidators_out=./rpc/go \
+            --python_out=./rpc/python \
+            --twirp_python_out=./rpc/python \
+            --js_out=import_style=commonjs,binary:./rpc/js \
+            --twirp_js_out=import_style=commonjs,binary:./rpc/js \
+            --twirp_swagger_out=./swaggerui/rpc \
+            proto/pot/service.proto
+tools_module/tools/bin/statik -f -src=swaggerui -dest=swaggerui-statik
+make: Leaving directory `/Users/isaias.garcia/Documents/projects/pyggpot'
+ 
